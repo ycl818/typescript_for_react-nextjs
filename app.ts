@@ -174,3 +174,29 @@ const userWithTheme: UserType2 = {
   //theme: "pink"
   theme: "dark"
 }
+
+// INTERFACES
+
+interface IUser {
+  username: string;
+  email:string;
+  age:number;
+}
+
+interface IEmployee extends IUser{
+  employeeId:number,
+}
+
+const emp: IEmployee = {
+  username:"tom",
+  email:"tom@gmail.com",
+  age:18,
+  employeeId:1
+}
+
+const cli: IUser = {
+  username:"tom",
+  email:"tom@gmail.com",
+  age:18,
+}
+
